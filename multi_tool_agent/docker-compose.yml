@@ -1,0 +1,10 @@
+services:
+  newsgenerator:
+    image: newsgenerator
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      environment:
+      - API_KEY
+      - DB_PASSWORD
+  
